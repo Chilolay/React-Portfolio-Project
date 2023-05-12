@@ -1,0 +1,59 @@
+.heroWrapper {
+  height: 500px;
+  width: 100vw;
+  position: relative;
+  background-image: linear-gradient(
+    120deg,
+    rgba(212, 252, 121, 0.1) 0%,
+    rgba(119, 194, 173, 0.3) 50%
+  );
+  background-color: white;
+  .col {
+    margin-top: 100px;
+  }
+  .row .col h1,
+  h5 {
+    text-align: center;
+    margin-left: 3rem;
+  }
+}
+
+.heroWrapper:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-image: url("../../app/assets/potted_monstera.webp");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: right -60% bottom 50%;
+  filter: blur(2px);
+  opacity: 0.2;
+}
+
+.heroImg {
+  max-width: 20rem;
+}
+
+.heroCards {
+  .card {
+    position: relative;
+    bottom: 2rem;
+  }
+ .card a {
+    text-decoration: none;
+    color: rgb(119, 194, 173);
+  }
+ .cardText {
+    font-size: 28px;
+ }
+ .cardIcon {
+    font-size: 28px;
+ }
+}
+/* 
+.heroCards .cardBody:hover {
+    scale: 1.5;
+} */

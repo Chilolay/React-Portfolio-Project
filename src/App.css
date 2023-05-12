@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -31,4 +31,72 @@
   100% {
     transform: translateY(0px);
   }
+} */
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+.navbar-brand {
+    max-width: 4rem;
+    margin-right: 2rem;
+    color: white;
+}
+
+/* .navbar-brand img {
+    width: 100%;
+    height: 100%;
+    margin-right: 2rem;
+    max-width: 4rem;
+} */
+
+.navbar {
+    background-color: rgb(119,194,173);
+    margin-bottom: 1rem;
+    min-height: 3rem;
+    color: white;
+}
+
+.nav-item {
+  padding-right: 2rem;
+}
+
+
+/* .card-title {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+} */
+
+/* .page-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: 300ms ease-out;
+}
+
+.page-exit {
+    opacity: 1;
+}
+
+.page-exit-active {
+    opacity: 0;
+    transition: 300ms ease-in;
+} */
+
+.site-footer {
+    background-color: rgb(119,194,173);
+    padding: 20px 0;
+    margin-top: 2rem;
 }
