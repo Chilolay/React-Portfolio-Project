@@ -2,29 +2,30 @@ import { useState } from 'react';
 import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem } from 'reactstrap';
 // import { NavLink } from "react-router-dom";
 import SearchBar from './SearchBar';
+import './Nav.scss'
 
 const Navigation = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-      <Navbar sticky="top" expand="md" className='mb-0'>
-        <NavbarBrand className="ms-5" href="/">
+      <Navbar sticky="top" expand="md" className="mb-0 navbar-dark bg-primary">
+        <NavbarBrand className="me-5" href="/">
           I Wet My Plants
         </NavbarBrand>
         <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
         <Collapse isOpen={menuOpen} navbar>
-          <Nav className="ms-auto" navbar>
-            <NavItem>
+          <Nav className="me-auto" navbar>
+            <NavItem className="pe-4">
               {/* <NavLink className="nav-link" to="/"> */}
               Home
               {/* </NavLink> */}
             </NavItem>
-            <NavItem>
+            <NavItem className="pe-4">
               {/* <NavLink className="nav-link" to="/care guides"> */}
               Care Guides
               {/* </NavLink> */}
             </NavItem>
-            <NavItem>
+            <NavItem className="pe-4">
               {/* <NavLink className="nav-link" to="/articles"> */}
               Articles
               {/* </NavLink> */}

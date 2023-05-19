@@ -19,21 +19,25 @@ const SearchBar = () => {
     // }
 
   return (
-    <div>
+    <form className="d-flex">
       <Input
         type="search"
         placeholder="Search"
+        className="form-control me-sm-2"
         // onChange={handleChange}
         // value={searchInput}
-
       />
       <div>
         {/* {possibleSearchVals.map((searchval) => {
           return <div>{searchval}</div>;
         })} */}
       </div>
-      <Button>Search</Button>
-    </div>
+      <Button
+        type='submit'
+        className="btn btn-secondary my-2 my-sm-0">
+        Search
+      </Button>
+    </form>
   );
 }
 

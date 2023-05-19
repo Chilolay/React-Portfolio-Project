@@ -1,44 +1,42 @@
-import "./Hero.css";
-import { Container, Row, Col, Card, CardBody, CardText } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import "./Hero.scss";
+import { Row, Col, Card ,CardBody, CardText } from "reactstrap";
 
 const HeroCards = () => {
   return (
-    <Container className="heroCards">
-      <Row className="row-cols-1 row-cols-md-3 pb-5">
-        <Col className="my-3">
+    <div className="heroCards">
+      <Row md="3" xs="1" className="pb-5">
+        <Col className="my-3 px-5">
           <Card>
-            <a href="../../pages/ArticlesPages">
+            <a href="/">
               <CardBody>
-                <CardText className="cardText">Toxic Plants</CardText>
-                <FontAwesomeIcon className="cardIcon" icon={faArrowRightLong} />
+                <CardText>Toxic Plants</CardText>
               </CardBody>
+              <i className="fa-solid fa-arrow-right-long fa-2x fa-pull-right card-icon"></i>
             </a>
           </Card>
         </Col>
-        <Col className="my-3">
+        <Col className="my-3 px-5">
           <Card>
-            <a href="../../pages/ArticlesPages">
+            <a href="/">
               <CardBody>
-                <CardText className="cardText">Low Light Plants</CardText>
-                <FontAwesomeIcon className="cardIcon" icon={faArrowRightLong} />
+                <CardText>Low Light Plants</CardText>
               </CardBody>
+              <i className="fa-solid fa-arrow-right-long fa-2x fa-pull-right card-icon"></i>
             </a>
           </Card>
         </Col>
-        <Col className="my-3">
+        <Col className="my-3 px-5">
           <Card>
-            <a href="../../pages/ArticlesPages">
+            <a href="/">
               <CardBody>
-                <CardText className="cardText">Repotting Guide</CardText>
-                <FontAwesomeIcon className="cardIcon" icon={faArrowRightLong} />
+                <CardText>Repotting Guide</CardText>
               </CardBody>
+              <i className="fa-solid fa-arrow-right-long fa-2x fa-pull-right card-icon"></i>
             </a>
           </Card>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 

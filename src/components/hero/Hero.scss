@@ -1,13 +1,14 @@
 .heroWrapper {
   height: 500px;
-  width: 100vw;
+  // width: 100%;
+  box-sizing: border-box;
   position: relative;
   background-image: linear-gradient(
     120deg,
     rgba(212, 252, 121, 0.1) 0%,
     rgba(119, 194, 173, 0.3) 50%
   );
-  background-color: white;
+
   .col {
     margin-top: 100px;
   }
@@ -25,7 +26,7 @@
   height: 100%;
   top: 0px;
   left: 0px;
-  background-image: url("../../app/assets/potted_monstera.webp");
+  background-image: url("../../assets/potted_monstera.webp");
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: right -60% bottom 50%;
@@ -38,22 +39,31 @@
 }
 
 .heroCards {
+  display: flex;
+  justify-content: center;
+  margin: 0 15rem;
   .card {
     position: relative;
+    height: 100%;
     bottom: 2rem;
+    transition: scale 300ms;
   }
  .card a {
     text-decoration: none;
-    color: rgb(119, 194, 173);
+    color: var(--primary-color);
   }
- .cardText {
+  .card:hover {
+    scale: 1.1;
+  }
+  .card-body:hover {
+    color: rgb(83, 139, 123);
+  }
+ .card-text {
     font-size: 28px;
  }
- .cardIcon {
-    font-size: 28px;
+ .card-icon {
+    font-size: 35px;
+    margin-right: 1.5rem;
  }
 }
-/* 
-.heroCards .cardBody:hover {
-    scale: 1.5;
-} */
+
