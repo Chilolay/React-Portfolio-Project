@@ -14,62 +14,62 @@ import moneyPlantImg from '../assets/moneyPlant.webp'
 export const PLANTS = [
     {
         id: 0,
-        name: 'air plant',
+        name: 'Air Plant',
         image: airPlantImg
     },
         {
         id: 1,
-        name: 'alocasia',
+        name: 'Alocasia',
         image:alocasiaImg
     },
         {
         id: 2,
-        name: 'asparagus fern',
+        name: 'Asparagus Fern',
         image: asparagusFernImg
     },
         {
         id: 3,
-        name: 'banana plant',
+        name: 'Banana Plant',
         image: bananaPlantImg
     },
         {
         id: 4,
-        name: 'bromeliad',
+        name: 'Bromeliad',
         image: bromeliadImg
     },
         {
         id: 5,
-        name: 'croton',
+        name: 'Croton',
         image: CrotonImg
     },
         {
         id: 6,
-        name: 'dieffenbachia',
+        name: 'Dieffenbachia',
         image: dieffenbachiaImg
     },
         {
         id: 7,
-        name: 'dracaena',
+        name: 'Dracaena',
         image: dracaenaImg
     },
         {
         id: 8,
-        name: 'ficus',
+        name: 'Ficus',
         image: ficusImg
     },
         {
         id: 9,
-        name: 'fiddle leaf fig',
+        name: 'Fiddle Leaf Fig',
         image: fiddleLeafFigImg
     },
         {
         id: 10,
-        name: 'hoya',
+        name: 'Hoya',
         image: hoyaImg
     },
         {
         id: 11,
-        name: 'money plant',
+        name: 'Money Plant',
         image: moneyPlantImg
     }
 

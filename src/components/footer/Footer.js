@@ -17,7 +17,7 @@ const Footer = () => {
               </ul>
             </Col>
             <Col>
-              <p class="m-0">
+              <p className="m-0">
                 <strong>Coded by Chloe Boyd</strong>
               </p>
             </Col>

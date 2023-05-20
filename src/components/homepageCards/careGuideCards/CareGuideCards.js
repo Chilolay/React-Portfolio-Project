@@ -1,15 +1,9 @@
-import { Row, Col } from "reactstrap";
+import { Row, Col, Button } from "reactstrap";
 import DisplayCareCard from "./DisplayCareCard";
 import { PLANTS } from "../../../shared/PLANTS";
 import "../homepageCards.scss";
 
 const CareGuideCards = () => {
-  // const selectRandomPlants = (arr, num) => {
-  //   const shuffle = [...PLANTS].sort(() => 0.5 - Math.random()).slice(PLANTS,3);
-
-  //   return shuffle;
-
-  // }
 
   const randomCareGuidePlants = () => {
     const randomIndex = [];
@@ -24,28 +18,24 @@ const CareGuideCards = () => {
     return PLANTS.map((plant, i) => {
       if (randomIndex.includes(i)) {
         return (
-          <Col className="p-5" key={plant.id}>
+          <Col key={plant.id} className="mb-4">
             <DisplayCareCard plant={plant} />
           </Col>
         );
       }
+      return null;
     });
   };
 
   return (
-    <div className="bg-light py-5 text-center careGuideCards">
-      <h2 className="text-center pb-3">
-        Check Out Our In Depth Plant Care Guides
-      </h2>
-      <Row className="row-cols-1 row-cols-md-3">{randomCareGuidePlants()}</Row>
-      <div className="d-flex justify-content-center">
-        <a
-          href="/"
-          className="btn btn-lg btn-primary justify-content-center m-4"
-        >
-          See All Care Guides
-        </a>
-      </div>
+    <div className="bg-light text-center careGuideCards">
+      <h2>Check Out Our In Depth Plant Care Guides</h2>
+      <Row md="3" xs="1">
+        {randomCareGuidePlants()}
+      </Row>
+      <Button href="/" className="btn-lg m-4">
+        See All Care Guides
+      </Button>
     </div>
   );
 };

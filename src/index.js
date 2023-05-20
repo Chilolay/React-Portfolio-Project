@@ -4,7 +4,6 @@ import { createRoot } from 'react-dom/client';
 // import { store } from './app/store';
 // import App from './App';
 import HomePage from './pages/HomePage'
-// import { ParallaxProvider } from "react-scroll-parallax";
 import RootLayout from './layout/RootLayout'
 import ErrorPage from './pages/ErrorPage';
 import "bootswatch/dist/minty/bootstrap.min.css";
