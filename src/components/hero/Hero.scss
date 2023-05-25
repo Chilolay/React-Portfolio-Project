@@ -1,5 +1,7 @@
+@import "~bootstrap/scss/bootstrap";
+
 .heroWrapper {
-  height: 500px;
+  height: 34rem;
   width: 100%;
   box-sizing: border-box;
   position: relative;
@@ -8,17 +10,18 @@
     rgba(212, 252, 121, 0.1) 0%,
     rgba(119, 194, 173, 0.3) 50%
   );
-
   .colOne {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
   .colTwo {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   .row .col h1,
   h5 {
     text-align: center;
-
+  }
+  .heroImg {
+    max-width: 20rem;
   }
 }
 
@@ -37,17 +40,9 @@
   opacity: 0.2;
 }
 
-.heroImg {
-  max-width: 20rem;
-}
-
 .heroCards {
   justify-content: center;
-  padding: 0 8rem;
-  // margin-bottom: 5rem;
   .card {
-    position: relative;
-    height: 100%;
     bottom: 4rem;
     transition: scale 300ms;
   }
@@ -57,13 +52,24 @@
   .card:hover {
     scale: 1.1;
   }
-  .card-body{
-    padding: 0.5rem;
+  .card-body {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
   }
   .card-body:hover {
     color: rgb(83, 139, 123);
   }
   .card-icon {
     margin-right: 1.5rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .heroWrapper {
+    .colOne {
+      margin-top: 6rem;
+    }
+    .colTwo {
+      margin-top: 6rem;
+    }
   }
 }

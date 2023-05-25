@@ -11,9 +11,7 @@ const Hero = () => {
           <Col className="px-3 colOne">
             <h1 className="mb-4">Welcome to I Wet My Plants</h1>
             <h5>
-              The go to place for houseplant care. We have many care guides
-              covering all you need to know about your plants as well as tips
-              and solutions for common plant related problems.
+              We are the go to place for houseplant care information. Check out our comprehensive care guides for specific plants, read our in depth articles covering a variety of plant related topics, and scroll to the bottom of this page for links to external articles for more plant related tips, solutions and how to's.
             </h5>
           </Col>
           <Col className="d-none d-sm-block colTwo">

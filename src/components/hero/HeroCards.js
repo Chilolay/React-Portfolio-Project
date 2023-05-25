@@ -1,12 +1,12 @@
 import "./Hero.scss";
-import { Row, Col, Card ,CardBody, CardTitle } from "reactstrap";
+import { Container, Row, Col, Card ,CardBody, CardTitle } from "reactstrap";
 
 const HeroCards = () => {
   return (
-    <div className="heroCards">
+    <Container className="heroCards">
       <Row xs="1" md="3" className="pb-5">
-        <Col className="my-2">
-          <Card className="mx-3 h-100">
+        <Col className="my-2 px-2">
+          <Card className="h-100">
             <a href="/">
               <CardBody>
                 <CardTitle tag="h3">Toxic Plants</CardTitle>
@@ -15,8 +15,8 @@ const HeroCards = () => {
             </a>
           </Card>
         </Col>
-        <Col className="my-2">
-          <Card className="mx-3 h-100">
+        <Col className="my-2 px-2">
+          <Card className="h-100">
             <a href="/">
               <CardBody>
                 <CardTitle tag="h3">Low Light Plants</CardTitle>
@@ -25,8 +25,8 @@ const HeroCards = () => {
             </a>
           </Card>
         </Col>
-        <Col className="my-2">
-          <Card className="mx-3 h-100">
+        <Col className="my-2 px-2">
+          <Card className="h-100">
             <a href="/">
               <CardBody>
                 <CardTitle tag="h3">Repotting Guide</CardTitle>
@@ -36,7 +36,7 @@ const HeroCards = () => {
           </Card>
         </Col>
       </Row>
-    </div>
+    </Container>
   );
 };
 
