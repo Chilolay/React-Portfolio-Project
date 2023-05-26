@@ -67,9 +67,31 @@
   .heroWrapper {
     .colOne {
       margin-top: 6rem;
+      padding-left: 5rem;
     }
     .colTwo {
       margin-top: 6rem;
+    }
+  }
+}
+
+@include media-breakpoint-between(lg, sm) {
+  .heroWrapper {
+    .colOne {
+      padding: 0 2rem;
+      margin-top: 2rem;
+    }
+    .colTwo{
+      margin-top: 2rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .heroWrapper {
+    .colOne {
+      padding: 0 1rem;
+      margin-top: 3rem;
     }
   }
 }

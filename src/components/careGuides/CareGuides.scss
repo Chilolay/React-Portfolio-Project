@@ -1,0 +1,42 @@
+@import "~bootswatch/dist/minty/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/minty/bootswatch";
+
+.careCards {
+  text-align: center;
+  .card {
+    align-items: center;
+    padding-top: 1.5rem;
+  }
+  .card-img {
+    max-height: 20rem;
+    max-width: 10rem;
+  }
+  .card-body {
+    flex-flow: column-reverse;
+    display: flex;
+  }
+  .card-title {
+    text-align: center;
+  }
+}
+
+a .careGuideCards {
+  background-image: url("../../assets/parabolic-pentagon.svg");
+  box-shadow: 0 0 18px 18px white inset;
+  background-position: center;
+  background-size: 160%;
+
+  transition: all 0.5s;
+  transition-property: background-size, transform, box-shadow;
+}
+a .careGuideCards:hover {
+  background-size: 200%;
+  transform: scale(1.05);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.pagination {
+  justify-content: center;
+  padding: 2rem;
+}

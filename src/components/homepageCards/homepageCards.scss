@@ -1,6 +1,8 @@
+@import "~bootswatch/dist/minty/variables";
 @import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/minty/bootswatch";
 
-.careGuideCards {
+.homeCareGuideCards {
   margin-top: 0.5rem;
   margin-bottom: 8rem;
   margin-right: 0;
@@ -10,7 +12,7 @@
   }
 }
 
-.careCard {
+.homeCareCard {
   align-items: center;
   background-image: url("../../assets/parabolic-pentagon.svg");
   box-shadow: 0 0 18px 18px white inset;
@@ -24,7 +26,7 @@
   }
 }
 
-.careCard:hover {
+.homeCareCard:hover {
   background-size: 120%;
   transform: scale(1.05);
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);

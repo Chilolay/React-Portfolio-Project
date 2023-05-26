@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap';
-// import { NavLink } from "react-router-dom";
+import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem } from 'reactstrap';
+import { NavLink } from "react-router-dom";
 import SearchBar from './SearchBar';
 import './Nav.scss'
 
@@ -21,7 +21,7 @@ const Navigation = () => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/care guides">
+              <NavLink className="nav-link" to="/careGuides">
               Care Guides
               </NavLink>
             </NavItem>

@@ -8,7 +8,7 @@ import { Container } from "reactstrap";
 function App() {
   return (
     <div className="App">
-      <Container fluid className="bg_leaf_pattern">
+      <Container fluid className="px-0 bg_leaf_pattern">
         <Navigation />
         <Outlet />
         <Footer />

@@ -8,16 +8,7 @@ const Footer = () => {
         <Container>
           <Row>
             <Col className="text-center">
-              <h5>Links</h5>
-              <ul className="list-unstyled">
-                <li>{/* <Link to="/">Home</Link> */}</li>
-                <li>{/* <Link to="/careguidespage">Care Guides</Link> */}</li>
-                <li>{/* <Link to="/articlespage">Articles</Link> */}</li>
-                <li></li>
-              </ul>
-            </Col>
-            <Col>
-              <p className="m-0">
+              <p>
                 <strong>Coded by Chloe Boyd</strong>
               </p>
             </Col>

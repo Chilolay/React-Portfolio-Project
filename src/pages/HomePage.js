@@ -1,6 +1,6 @@
 // import SubHeader from '../components/SubHeader'
 import Hero from "../components/hero/Hero";
-import CareGuideCards from "../components/homepageCards/careGuideCards/CareGuideCards";
+import HomeCareCards from "../components/homepageCards/homeCareCards/HomeCareCards";
 import TipsSolutionsCards from "../components/homepageCards/tipsSolutionsCards/TipsSolutionsCards";
 
 // import TipsSolutionsCards from "../components/homepageCards/TipsSolutionsCards";
@@ -10,7 +10,7 @@ const HomePage = () => {
     <div>
       {/* <SubHeader current='Home'/> */}
       <Hero />
-      <CareGuideCards />
+      <HomeCareCards />
       <TipsSolutionsCards />
       </div>
   );
