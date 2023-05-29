@@ -8,17 +8,18 @@ import RootLayout from "./layout/RootLayout";
 import ErrorPage from "./pages/ErrorPage";
 import ArticlesPage from "./pages/ArticlesPage";
 import CareGuidesPage from "./pages/CareGuidesPage";
+import ExampleArticle from "./components/articles/ExampleArticle";
+import ExampleCareGuide from "./components/careGuides/ExampleCareGuide";
 import Test from "./components/Test";
 import "bootswatch/dist/minty/bootstrap.min.css";
 import "./index.css";
 import "font-awesome/css/font-awesome.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-
-import firebase from 'firebase/compat/app';
-import 'firebase/firestore';
-import 'firebase/compat/auth';
-import 'firebase/analytics';
+import firebase from "firebase/compat/app";
+import "firebase/firestore";
+import "firebase/compat/auth";
+import "firebase/analytics";
 
 // import { useAuthState } from 'react-firebase-hooks/auth';
 // import { useCollectionData } from 'react-firebase-hooks/firestore';
@@ -37,8 +38,6 @@ firebase.initializeApp({
 // const firestore = firebase.firestore();
 // const analytics = firebase.analytics();
 
-
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -54,6 +53,10 @@ const router = createBrowserRouter([
         element: <ArticlesPage />,
       },
       {
+        path: "/exampleArticle",
+        element: <ExampleArticle />,
+      },
+      {
         path: "/articles/:id",
         element: <Test />,
         loader: ({ params }) => {
@@ -64,6 +67,12 @@ const router = createBrowserRouter([
       {
         path: "/careGuides",
         element: <CareGuidesPage />,
+        children: [
+          {
+            path: "/careGuides/exampleCareGuide",
+            element: <ExampleCareGuide />,
+          },
+        ],
       },
     ],
   },

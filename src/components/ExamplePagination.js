@@ -1,7 +1,7 @@
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap'
-import "./CareGuides.scss";
+import "../index.css";
 
-const CareCardPagination = () => {
+const ExamplePagination = () => {
   return (
     <Pagination>
       <PaginationItem disabled>
@@ -29,4 +29,4 @@ const CareCardPagination = () => {
   );
 }
 
-export default CareCardPagination
+export default ExamplePagination;

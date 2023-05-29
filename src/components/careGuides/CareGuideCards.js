@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { PLANTS } from "../../shared/PLANTS";
 import DisplayCareGuideCards from "./DisplayCareGuideCards";
-import CareCardPagination from "./CareCardPagination";
+import ExamplePagination from "../ExamplePagination";
 import "./CareGuides.scss";
 
 const CareGuideCards = () => {
@@ -27,7 +27,7 @@ const CareGuideCards = () => {
       <Row xs="2" md="4" className="g-4">
         {plantsList}
       </Row>
-    <CareCardPagination />
+      <ExamplePagination />
     </Container>
   );
 };

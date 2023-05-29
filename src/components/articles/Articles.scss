@@ -1,0 +1,68 @@
+@import "~bootswatch/dist/minty/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/minty/bootswatch";
+
+.articleCards {
+  h1 {
+    text-align: center;
+  }
+}
+
+.articleHeader {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  background: rgba(black, 0.5);
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+}
+
+.imgContainer .card-img {
+  max-height: 18.75rem;
+  object-fit: cover;
+}
+
+figcaption {
+  margin-left: 1rem;
+}
+
+.articleImg {
+  height: 18.75rem;
+  overflow: hidden;
+  img {
+    width: 100%;
+    transition: 0.35s all ease-in-out;
+  }
+  img:hover {
+    transform: scale(1.2);
+  }
+}
+
+// Example article css
+.container .exampleArticle {
+  h1 {
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+  }
+}
+
+.exampleArticle {
+  h1 {
+    padding: 1.5rem;
+  }
+  .headerImage {
+    margin: auto;
+    padding-bottom: 1.5rem;
+    display: block;
+    max-height: 25rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .headerImage {
+    width: 200px;
+  }
+}

@@ -1,41 +1,15 @@
-import { Col, Card, CardBody, CardImg, CardTitle } from "reactstrap";
+import { Container, Row } from "reactstrap";
+import DisplayArticleCards from './DisplayArticleCards';
+import "./Articles.scss"
 
 const ArticleCards = () => {
   return (
-    <Col>
-      <Card className="h-100 m-3">
-        <CardTitle className="articleHeaders">Toxic Plants</CardTitle>
-        <figure className="size">
-          <a href="/">
-            <div className="articleImg">
-              <CardImg top
-                src="/"
-                alt="Photograph of a Lily flower"
-              />
-            </div>
-          </a>
-
-          <figcaption>
-            Photo by{" "}
-            <a href="/">
-              Matt
-            </a>
-            on
-            <a href="/">
-              Unsplash
-            </a>
-          </figcaption>
-        </figure>
-
-        <CardBody>
-          <p className="card-text">
-            Did you know some of your houseplants may be toxic to you and your
-            pets? This is a comprehensive list of toxic plants to avoid if you
-            have pets or littleones.
-          </p>
-        </CardBody>
-      </Card>
-    </Col>
+    <Container className="articleCards">
+      <h1>Articles</h1>
+      <Row xs="1" md="2" className="g-4 mb-5">
+          <DisplayArticleCards />
+      </Row>
+    </Container>
   );
 };
 

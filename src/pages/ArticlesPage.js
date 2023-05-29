@@ -1,13 +1,15 @@
 import React from "react";
-import DisplayArticleCards from "../components/articles/DisplayArticleCards";
+import ArticleCards from "../components/articles/ArticleCards";
+import ExamplePagination from "../components/ExamplePagination";
 import "../components/articles/Articles.scss";
 
 const ArticlesPages = () => {
   return (
     <div>
-      <DisplayArticleCards />
+      <ArticleCards />
+      <ExamplePagination />
     </div>
-  )
+  );
 };
 
 export default ArticlesPages;

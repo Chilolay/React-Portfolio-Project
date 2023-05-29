@@ -1,4 +1,3 @@
-import React from "react";
 import CareGuideCards from "../components/careGuides/CareGuideCards"
 import "../components/careGuides/CareGuides.scss";
 

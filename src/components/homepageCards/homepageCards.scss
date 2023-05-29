@@ -57,8 +57,11 @@
   .tipsCardImg .card-img {
     max-height: 300px;
     object-fit: cover;
-    @include media-breakpoint-up(md) {
-      max-width: 400px;
-    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .tipsCardImg .card-img {
+    max-width: 400px;
   }
 }
