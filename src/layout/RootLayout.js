@@ -5,6 +5,7 @@ import Footer from "../components/footer/Footer";
 import { Outlet } from "react-router-dom";
 import { Container } from "reactstrap";
 
+
 function App() {
   return (
     <div className="App">

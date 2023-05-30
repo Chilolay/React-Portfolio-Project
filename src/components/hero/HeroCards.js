@@ -1,5 +1,7 @@
 import "./Hero.scss";
 import { Container, Row, Col, Card ,CardBody, CardTitle } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { icon } from "@fortawesome/fontawesome-svg-core/import.macro"
 
 const HeroCards = () => {
   return (
@@ -11,7 +13,14 @@ const HeroCards = () => {
               <CardBody>
                 <CardTitle tag="h3">Toxic Plants</CardTitle>
               </CardBody>
-              {/* <i className="fa-solid fa-arrow-right-long fa-2x fa-pull-right card-icon"></i> */}
+              <FontAwesomeIcon
+                icon={icon({
+                  name: "arrow-right-long",
+                  style: "solid",
+                })}
+                pull="right"
+                size="3x"
+              />
             </a>
           </Card>
         </Col>
@@ -21,7 +30,14 @@ const HeroCards = () => {
               <CardBody>
                 <CardTitle tag="h3">Low Light Plants</CardTitle>
               </CardBody>
-              {/* <i className="fa-solid fa-arrow-right-long fa-2x fa-pull-right card-icon"></i> */}
+              <FontAwesomeIcon
+                icon={icon({
+                  name: "arrow-right-long",
+                  style: "solid",
+                })}
+                pull="right"
+                size="3x"
+              />
             </a>
           </Card>
         </Col>
@@ -31,7 +47,14 @@ const HeroCards = () => {
               <CardBody>
                 <CardTitle tag="h3">Repotting Guide</CardTitle>
               </CardBody>
-              {/* <i className="fa-solid fa-arrow-right-long fa-2x fa-pull-right card-icon"></i> */}
+              <FontAwesomeIcon
+                icon={icon({
+                  name: "arrow-right-long",
+                  style: "solid",
+                })}
+                pull="right"
+                size="3x"
+              />
             </a>
           </Card>
         </Col>
