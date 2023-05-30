@@ -15,7 +15,8 @@ export const PLANTS = [
     {
         id: 0,
         name: 'Air Plant',
-        image: airPlantImg
+        image: airPlantImg,
+        linkTo: "/exampleCareGuide"
     },
         {
         id: 1,

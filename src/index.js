@@ -13,7 +13,6 @@ import ExampleCareGuide from "./components/careGuides/ExampleCareGuide";
 import Test from "./components/Test";
 import "bootswatch/dist/minty/bootstrap.min.css";
 import "./index.css";
-import "font-awesome/css/font-awesome.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import firebase from "firebase/compat/app";
@@ -67,12 +66,10 @@ const router = createBrowserRouter([
       {
         path: "/careGuides",
         element: <CareGuidesPage />,
-        children: [
-          {
-            path: "/careGuides/exampleCareGuide",
-            element: <ExampleCareGuide />,
-          },
-        ],
+      },
+      {
+        path: "/exampleCareGuide",
+        element: <ExampleCareGuide />,
       },
     ],
   },

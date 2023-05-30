@@ -11,7 +11,7 @@ const HeroCards = () => {
               <CardBody>
                 <CardTitle tag="h3">Toxic Plants</CardTitle>
               </CardBody>
-              <i className="fa-solid fa-arrow-right-long fa-2x fa-pull-right card-icon"></i>
+              {/* <i className="fa-solid fa-arrow-right-long fa-2x fa-pull-right card-icon"></i> */}
             </a>
           </Card>
         </Col>
@@ -21,7 +21,7 @@ const HeroCards = () => {
               <CardBody>
                 <CardTitle tag="h3">Low Light Plants</CardTitle>
               </CardBody>
-              <i className="fa-solid fa-arrow-right-long fa-2x fa-pull-right card-icon"></i>
+              {/* <i className="fa-solid fa-arrow-right-long fa-2x fa-pull-right card-icon"></i> */}
             </a>
           </Card>
         </Col>
@@ -31,7 +31,7 @@ const HeroCards = () => {
               <CardBody>
                 <CardTitle tag="h3">Repotting Guide</CardTitle>
               </CardBody>
-              <i className="fa-solid fa-arrow-right-long fa-2x fa-pull-right card-icon"></i>
+              {/* <i className="fa-solid fa-arrow-right-long fa-2x fa-pull-right card-icon"></i> */}
             </a>
           </Card>
         </Col>
